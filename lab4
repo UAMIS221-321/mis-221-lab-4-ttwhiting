@@ -1,0 +1,63 @@
+//start main
+DisplayMenu();
+//GetUserChoice();
+//int userChoice = IsValidChoice();
+int ran = new Random().Next(3,9);
+GetFull();
+//GetPartial();
+
+//end main
+
+static string DisplayMenu() {
+    System.Console.WriteLine("Hello, please enter 1 for a full triangle, 2 for a partial triangle, and 3 to exit");
+    return Console.ReadLine();
+}
+// int GetUserChoice() {
+//     DisplayMenu();
+// int userChoice= Console.ReadLine();
+//     if(IsValidChoice(userChoice)) {
+//         return userChoice;
+//     }
+//     else return 0;
+// }
+// static bool IsValidChoice(int userChoice){
+//     if(userChoice = 1){
+//         return true;
+        
+//     }
+//     return false;
+// }
+
+
+
+static int GetFull() {
+int ran = new Random().Next(3,9);
+
+     for (int i=ran ; i<0; i--) {
+         for(int j=i; j<ran; j++){
+             System.Console.Write("o");
+         }
+         System.Console.WriteLine();
+     }
+     return ran;
+ }
+ for (int i=ran ; i>0; i--) {
+        for(int j=i; j<ran; j++){
+            System.Console.Write("o\t");
+        }
+        System.Console.WriteLine();
+    }
+
+
+// static int GetPartial() {
+// int ran = new Random().Next(3,9);
+
+//      for (int i=ran ; i>0; i--) {
+//          for(int j=i; j<ran; j++){
+//             if(j==3 || j==5 || j==9) {
+//                 Console.Write("o\t");
+//             }
+//         }
+//      }
+//      return ran;
+// }
